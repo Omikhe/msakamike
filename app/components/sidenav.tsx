@@ -9,10 +9,10 @@ export default function Sidenav() {
   const pathname = usePathname();
 
   return (
-    <div className="mx-28 flex flex-col justify-center min-h-screen">
+    <div className="mx-20 flex flex-col justify-center min-h-screen">
       <div className="flex flex-col gap-14 w-[82px] items-center justify-center">
         {/* Profile/Avatar */}
-        <div className="size-16 bg-[#ffffff] rounded-full overflow-hidden flex items-center justify-center">
+        <div className="size-16 bg-amber-100 rounded-full overflow-hidden flex items-center justify-center">
           <Image
             width={55}
             height={55}
@@ -40,6 +40,7 @@ export default function Sidenav() {
                       }`}
                     >
                       {link.icon}
+                      
                     </Link>
                     
                     {/* Tooltip */}
@@ -56,7 +57,7 @@ export default function Sidenav() {
         </nav>
 
         {/* Social Links */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2.5">
           {socialLinks.map(({ href, icon }) => (
             <Link
               key={href}

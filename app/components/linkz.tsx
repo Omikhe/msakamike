@@ -1,11 +1,11 @@
 import { 
   Home, 
   Code, 
-  Camera, 
-  FileText, 
+  Camera,  
   User,
   Github,
-  Instagram, Palette
+  Instagram, 
+  Palette
 } from "lucide-react";
 
 // Social media links with proper Lucide icons where available
@@ -63,7 +63,7 @@ export const navLinks = [
     description: "Back to homepage"
   },
   {
-    href:"Design",
+    href:"/design",
     label: "Design",
     icon: <Palette className="w-5 h-5" />,
   },
