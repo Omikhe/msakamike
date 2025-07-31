@@ -56,7 +56,7 @@ export default function Sidenav() {
         </nav>
 
         {/* Social Links */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           {socialLinks.map(({ href, icon }) => (
             <Link
               key={href}
