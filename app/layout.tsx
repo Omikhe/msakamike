@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Sidenav from "./components/sidenav";
+import Bottomnav from "./components/bottomnav";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,7 +29,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="flex h-screen overflow-hidden">
           {/* Fixed Sidenav */}
-          <aside className="flex-shrink-0">
+          <aside className="hidden lg:block lg:flex-shrink-0">
             <Sidenav />
           </aside>
 
@@ -38,6 +39,10 @@ export default function RootLayout({
               {children}
             </div>
           </main>
+
+          <nav className="fixed bottom-0 left-0 right-0 z-50 lg:hidden">
+            <Bottomnav />
+          </nav>
         </div>
       </body>
     </html>
