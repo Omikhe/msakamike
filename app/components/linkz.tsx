@@ -1,10 +1,10 @@
-import { 
-  Home, 
-  Code, 
-  Camera,  
+import {
+  Home,
+  Code,
+  Camera,
   User,
   Github,
-  Instagram, 
+  Instagram,
   Palette
 } from "lucide-react";
 
@@ -13,9 +13,9 @@ export const socialLinks = [
   {
     href: "https://x.com/mikemsaka/",
     icon: (
-      <svg 
-        className="w-3 h-3" 
-        fill="currentColor" 
+      <svg
+        className="w-3 h-3"
+        fill="currentColor"
         viewBox="0 0 24 24"
         aria-label="X (Twitter)"
       >
@@ -28,9 +28,9 @@ export const socialLinks = [
   {
     href: "https://www.pinterest.com/omikhe_/",
     icon: (
-      <svg 
-        className="w-3 h-3" 
-        fill="currentColor" 
+      <svg
+        className="w-3 h-3"
+        fill="currentColor"
         viewBox="0 0 24 24"
         aria-label="Pinterest"
       >
@@ -63,12 +63,12 @@ export const navLinks = [
     description: "Back to homepage"
   },
   {
-    href:"/design",
+    href: "/design",
     label: "Design",
     icon: <Palette className="w-5 h-5" />,
   },
   {
-    href: "/webdev",
+    href: "/code",
     label: "Code",
     icon: <Code className="w-5 h-5" />,
     description: "My web development projects and skills"

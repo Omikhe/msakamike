@@ -1,7 +1,9 @@
+import { User } from "lucide-react"
 export default function About() {
     return (
         <div className="flex items-center justify-center h-screen">
-            <h1 className="animate-pulse font-bold">Still Cooking! 👨🏿‍🍳</h1>
+            <User size={300} className="-z-0 text-[#1f1f1f]"></User>
+
         </div>
     )
 }
