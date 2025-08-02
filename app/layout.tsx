@@ -31,7 +31,7 @@ export default function RootLayout({
           <aside className="flex-shrink-0">
             <Sidenav />
           </aside>
-          
+
           {/* Scrollable Main Content Area */}
           <main className="flex-1 overflow-y-auto overflow-x-hidden">
             <div className="min-h-full">
