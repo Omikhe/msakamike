@@ -1,9 +1,11 @@
-"use client";
-import { CldImage } from "next-cloudinary";
 import { Folder } from "lucide-react";
 import { Avatar } from "./components/sidenav";
+import { fetchPublicIds } from "./actions";
+import ImageGrid from "./components/image-grid";
 
-export default function Home() {
+export default async function Home() {
+  const publicIds = await fetchPublicIds();
+
   return (
     <div className="flex flex-col justify-start min-h-screen gap-10 mx-4 mt-10 lg:mr-20 lg:mt-10">
       <div className="flex flex-col gap-4">
@@ -28,40 +30,10 @@ export default function Home() {
       <div className="flex flex-col gap-2">
         <div className="flex gap-2">
           <Folder />
-          <h1 className="font-semibold  ml-1">My Recent Projects</h1>
+          <h1 className="font-semibold ml-1">My Recent Projects</h1>
         </div>
 
-        <div className="flex gap-4 flex-wrap">
-       
-
-          <CldImage
-            width="960"
-            height="960"
-            src="chocolate-smoothie-final_aqwojx"
-            sizes="100vw"
-            alt="Description of my image"
-            className="lg:w-52 lg:h-52 w-99.5 h-99.5 bg-[#272727] rounded-3xl overflow-hidden"
-            />
-            
-          <CldImage
-            width="960"
-            height="960"
-            src="disc.mat.master_d2ded2"
-            sizes="100vw"
-            alt="Description of my image"
-            className="lg:w-52 lg:h-52 w-99.5 h-99.5 bg-[#272727] rounded-3xl overflow-hidden"
-            />
-        
-
-
-          <div className="lg:w-52 lg:h-52 w-[398px] h-[398px] bg-[#272727] rounded-3xl"></div>
-          <div className="lg:w-52 lg:h-52 w-[398px] h-[398px] bg-[#272727] rounded-3xl"></div>
-          <div className="lg:w-52 lg:h-52 w-[398px] h-[398px] bg-[#272727] rounded-3xl"></div>
-          <div className="lg:w-52 lg:h-52 w-[398px] h-[398px] bg-[#272727] rounded-3xl"></div>
-          <div className="lg:w-52 lg:h-52 w-[398px] h-[398px] bg-[#272727] rounded-3xl"></div>
-          <div className="lg:w-52 lg:h-52 w-[398px] h-[398px] bg-[#272727] rounded-3xl"></div>
-          <div className="lg:w-52 lg:h-52 w-[398px] h-[398px] bg-[#272727] rounded-3xl"></div>
-        </div>
+        <ImageGrid publicIds={publicIds} />
       </div>
     </div>
   );
