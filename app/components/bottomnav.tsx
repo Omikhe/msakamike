@@ -41,7 +41,7 @@ export default function Bottomnav() {
                 />
 
                 <div className="flex gap-1 bg-gradient-to-b from-[#282828] to-[#1B1B1B] rounded-full relative z-10">
-                    {navLinks.map((link, index) => {
+                    {navLinks.map((link) => {
                         const isActive = pathname === link.href;
                         return (
                             <div key={link.href} className="flex-1">
