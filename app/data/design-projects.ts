@@ -89,6 +89,18 @@ export const designProjects: DesignProject[] = [
     height: 1350,
   },
   {
+    id: "living_i_poster_001",
+    publicId: "living_i_poster_001-1_m3do70",
+    title: "UNILIA Mbuzi Party",
+    category: "Posters",
+    client: "UNILIA",
+    description: "Promotional poster for mbuzi party",
+    alt: "UNILIA Mbuzi Party poster",
+    width: 1080,
+    height: 1350,
+  }
+  ,
+  {
     id: "codeschool-1",
     publicId: "codeschool_fldxyr",
     title: "CodeSchool - Web Design and Development",
@@ -96,8 +108,8 @@ export const designProjects: DesignProject[] = [
     client: "BETA Technologies",
     description: "Marketing poster promoting web design and development course",
     alt: "BETA Technologies web design and development course flyer",
-    width: 1080,
-    height: 1080,
+    width: 2480,
+    height: 3508,
   },
   {
     id: "codeschool-2",
