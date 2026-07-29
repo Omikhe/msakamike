@@ -76,5 +76,5 @@ export const aboutData: AboutData = {
         "Managed brand visual identity, event collateral, and digital promotional graphics for community radio and public campaigns.",
     },
   ],
-  resumeUrl: "/resume.pdf", // TODO: Upload your CV PDF file to the public/ folder as resume.pdf
+  resumeUrl: "/mike-msaka-resume.pdf",
 };

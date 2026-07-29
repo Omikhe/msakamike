@@ -43,10 +43,9 @@ export default function AboutPage() {
 
           {/* Action: Resume Download Button */}
           <div className="pt-1">
-            {/* TODO: Add your real PDF resume to /public/resume.pdf */}
             <a
               href={aboutData.resumeUrl}
-              download="Mike_Msaka_Resume.pdf"
+              download="mike-msaka-resume.pdf"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-amber-400 text-neutral-950 hover:bg-amber-300 transition-colors shadow-md focus:outline-none focus:ring-2 focus:ring-amber-400"
             >
               <Download className="w-4 h-4" />
