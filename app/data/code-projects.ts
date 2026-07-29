@@ -11,47 +11,26 @@ export interface CodeProject {
 
 export const codeProjects: CodeProject[] = [
   {
-    id: "omikhe-portfolio",
-    title: "Mike Msaka Portfolio Site",
+    id: "worklify",
+    title: "Worklify",
     description:
       "A fast, responsive portfolio website built with Next.js 15 App Router, React 19, Cloudinary API integration, and Tailwind CSS v4 featuring a custom masonry grid and lightboxes.",
-    techStack: ["Next.js 15", "React 19", "Tailwind CSS v4", "Cloudinary", "TypeScript"],
-    image: "codeschool_fldxyr",
-    liveUrl: "https://omikhe.vercel.app", // TODO: Update live URL if needed
-    sourceUrl: "https://github.com/omikhe/msakamike", // TODO: Update source repository URL
+    techStack: ["Next.js 15", "Tailwind CSS v4"],
+    image: "worklify-platform_zcq5fz.png",
+    liveUrl: "https://worklify.vercel.app",
+    sourceUrl: "https://github.com/omikhe/worklify",
     featured: true,
   },
   {
-    id: "property-valuation-portal",
-    title: "Valuations Africa Client Portal",
+    id: "chirunga-munchies",
+    title: "Chirunga Munchies",
     description:
-      "A full-stack property valuation calculator and client intake web application with real-time PDF generation, interactive mapping, and dynamic quote estimations.",
-    techStack: ["React", "Node.js", "Express", "Tailwind CSS", "PostgreSQL"],
-    image: "valuations-africa_usdwwz",
-    liveUrl: "#", // TODO: Replace with live client URL
-    sourceUrl: "#", // TODO: Replace with GitHub source link
+      "A fast, responsive portfolio website built with Next.js 15 App Router, React 19, Cloudinary API integration, and Tailwind CSS v4 featuring a custom masonry grid and lightboxes.",
+    techStack: ["Next.js 15", "Tailwind CSS v4"],
+    image: "chirunga-munchies-snapshots_jxponf.jpg",
+    liveUrl: "https://chirunga-munchies.vercel.app",
+    sourceUrl: "https://github.com/omikhe/chirunga-munchies",
     featured: true,
-  },
-  {
-    id: "codeschool-lms",
-    title: "CodeSchool Learning Management Platform",
-    description:
-      "An interactive student portal for coding bootcamp students featuring video lesson playback, quiz submissions, progress tracking dashboards, and automated grading.",
-    techStack: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS", "Stripe"],
-    image: "codeschool-3-1_z0v9cp",
-    liveUrl: "#", // TODO: Replace with live LMS platform URL
-    sourceUrl: "#", // TODO: Replace with GitHub source link
-    featured: false,
-  },
-  {
-    id: "realestate-listing-engine",
-    title: "CPC Real Estate Listing Engine",
-    description:
-      "High-performance property inventory listing site with instant search filtering, interactive image carousels, schedule tour forms, and agent dashboard management.",
-    techStack: ["Next.js", "GraphQL", "Tailwind CSS", "Cloudinary"],
-    image: "CPC-realtor-flyer-2-2_eym0nd",
-    liveUrl: "#", // TODO: Replace with live listing engine URL
-    sourceUrl: "#", // TODO: Replace with GitHub source link
-    featured: false,
-  },
+  }
+  ,
 ];
