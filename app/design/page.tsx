@@ -1,60 +1,42 @@
-"use client"
-import { ArrowUpRight } from "lucide-react"
+import type { Metadata } from "next";
+import { Suspense } from "react";
+import DesignGallery from "./design-gallery";
 
-const categories = [
-    "All Projects", "Branding", "Logos", "Flyers"
-]
-export default function Design() {
-    return (
-        <div className="lg:mx-0 mx-4 mt-10 flex flex-col gap-8">
-            <div className="flex gap-2">
-                {categories.map((category) => (
-                    <div
-                        key={category}
-                        className="text-[#8A8A8A] bg-[#292929] px-2 py-1 rounded-full hover:bg-[#F2F2F2] hover:text-[#101010]">
-                        {category}
-                    </div>
-                ))}
-            </div>
+export const metadata: Metadata = {
+  title: "Design Portfolio — Mike Msaka",
+  description:
+    "Explore graphic design work by Mike Msaka including brand identity, posters, flyers, logo marks, and promotional social media graphics.",
+  openGraph: {
+    title: "Design Portfolio — Mike Msaka",
+    description:
+      "Explore graphic design work by Mike Msaka including brand identity, posters, flyers, logo marks, and promotional social media graphics.",
+    url: "https://omikhe.vercel.app/design",
+  },
+};
 
-            <div className="flex flex-wrap gap-4 lg:gap-6 lg:mr-16 overflow-hidden">
+export default function DesignPage() {
+  return (
+    <div className="flex flex-col gap-8 mx-4 sm:mx-6 lg:mx-8 xl:mx-12 mt-8 lg:mt-12 pb-24 lg:pb-16">
+      {/* Header */}
+      <div className="flex flex-col gap-2 border-b border-[#222222] pb-6">
+        <h1 className="text-3xl sm:text-4xl font-bold text-neutral-100 tracking-tight">
+          Design Showcase
+        </h1>
+        <p className="text-neutral-400 text-sm sm:text-base max-w-2xl">
+          A selection of brand identity projects, print posters, promotional flyers, and corporate logo marks. Click any image to view details.
+        </p>
+      </div>
 
-                <div className="flex flex-col gap-1">
-                    <div className="h-[358px] w-[358px] lg:h-[300px] lg:w-[300px] rounded-3xl bg-[#272727] font-mono"></div>
-                    <div className="flex gap-2 hover:underline">
-                        <h3 className="font-mono ml-1.5 ">Valuations Africa</h3>
-                        <ArrowUpRight></ArrowUpRight>
-                    </div>
-                </div>
-
-                <div className="flex flex-col gap-1">
-                    <div className="h-[358px] w-[358px] lg:h-[300px] lg:w-[300px] rounded-3xl bg-[#272727] font-mono"></div>
-                    <div className="flex gap-2 hover:underline">
-                        <h3 className="font-mono ml-1.5 ">Valuations Africa</h3>
-                        <ArrowUpRight></ArrowUpRight>
-                    </div>
-                </div>
-
-                <div className="flex flex-col gap-1">
-                    <div className="h-[358px] w-[358px] lg:h-[300px] lg:w-[300px] rounded-3xl bg-[#272727] font-mono"></div>
-                    <div className="flex gap-2 hover:underline">
-                        <h3 className="font-mono ml-1.5 ">Valuations Africa</h3>
-                        <ArrowUpRight></ArrowUpRight>
-                    </div>
-                </div>
-
-                <div className="flex flex-col gap-1">
-                    <div className="h-[358px] w-[358px] lg:h-[300px] lg:w-[300px] rounded-3xl bg-[#272727] font-mono"></div>
-                    <div className="flex gap-2 hover:underline">
-                        <h3 className="font-mono ml-1.5 ">Valuations Africa</h3>
-                        <ArrowUpRight></ArrowUpRight>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </div>
-    )
+      {/* Interactive Gallery with URL search params filter */}
+      <Suspense
+        fallback={
+          <div className="flex items-center justify-center p-12 text-neutral-500">
+            Loading design portfolio...
+          </div>
+        }
+      >
+        <DesignGallery />
+      </Suspense>
+    </div>
+  );
 }
