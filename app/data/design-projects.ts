@@ -2,7 +2,7 @@ export interface DesignProject {
   id: string;
   publicId: string;
   title: string;
-  category: "Branding" | "Flyers" | "Posters" | "Logos" | "UI/UX Design";
+  category: "Branding" | "Flyers" | "Posters" | "Logos" | "UI/UX Design" | "Editorial Design" | "Signage" | "Merch & Apparel";
   client: string;
   description: string;
   alt: string;
@@ -16,7 +16,10 @@ export const DESIGN_CATEGORIES = [
   "Flyers",
   "Posters",
   "Logos",
-  "Social Media",
+  "UI/UX Design",
+  "Editorial Design",
+  "Signage",
+  "Merch & Apparel",
 ] as const;
 
 export type DesignCategory = (typeof DESIGN_CATEGORIES)[number];
@@ -312,17 +315,6 @@ export const designProjects: DesignProject[] = [
   },
   // — Worklify Branding & Logos —
   {
-    id: "worklify-platform",
-    publicId: "worklify-platform_zcq5fz",
-    title: "Worklify Platform",
-    category: "Branding",
-    client: "Worklify",
-    description: "Full platform brand identity design for Worklify — a freelance marketplace",
-    alt: "Worklify platform brand identity overview",
-    width: 1080,
-    height: 1080,
-  },
-  {
     id: "worklify-logo-horizontal",
     publicId: "worklify-logo-horizontal_ch8hzu",
     title: "Worklify Logo — Horizontal",
@@ -330,8 +322,8 @@ export const designProjects: DesignProject[] = [
     client: "Worklify",
     description: "Horizontal lockup of the Worklify logo mark on dark background",
     alt: "Worklify horizontal logo lockup on dark background",
-    width: 1920,
-    height: 1080,
+    width: 4096,
+    height: 4096,
   },
   {
     id: "worklify-wordmark",
@@ -341,8 +333,8 @@ export const designProjects: DesignProject[] = [
     client: "Worklify",
     description: "Clean wordmark design for Worklify brand identity system",
     alt: "Worklify wordmark logo design",
-    width: 1920,
-    height: 1080,
+    width: 4096,
+    height: 4096,
   },
   {
     id: "worklify-logo-horizontal-white",
@@ -352,8 +344,8 @@ export const designProjects: DesignProject[] = [
     client: "Worklify",
     description: "Horizontal Worklify logo lockup on white background",
     alt: "Worklify horizontal logo on white background",
-    width: 1920,
-    height: 1080,
+    width: 4096,
+    height: 4096,
   },
   {
     id: "worklify-logo-stacked",
@@ -365,6 +357,17 @@ export const designProjects: DesignProject[] = [
     alt: "Worklify stacked logo lockup design",
     width: 1080,
     height: 1080,
+  },
+  {
+    id: "worklify-platform-screens",
+    publicId: "worklify-platform_zcq5fz",
+    title: "Worklify Platform",
+    category: "UI/UX Design",
+    client: "Worklify",
+    description: "Full platform brand identity design for Worklify — a freelance marketplace",
+    alt: "Worklify platform brand identity overview",
+    width: 1912,
+    height: 914,
   },
   // — Chirunga Munchies Branding —
   {
@@ -427,7 +430,7 @@ export const designProjects: DesignProject[] = [
     id: "creams-nph-rdc-launch-day",
     publicId: "CREAMS_nph-rdc-launch-day_4x_jau0um",
     title: "NPH-RDC Launch Day",
-    category: "Posters",
+    category: "Flyers",
     client: "CREAMS",
     description: "Official launch day event poster for NPH-RDC",
     alt: "NPH-RDC launch day event poster design",
@@ -438,7 +441,7 @@ export const designProjects: DesignProject[] = [
     id: "creams-nph-rdc-day-1",
     publicId: "CREAMS_nph-rdc-day-1_4x_zerrxi",
     title: "NPH-RDC Day 1",
-    category: "Posters",
+    category: "Flyers",
     client: "CREAMS",
     description: "Day 1 event recap poster for NPH-RDC",
     alt: "NPH-RDC Day 1 event poster",
@@ -449,7 +452,7 @@ export const designProjects: DesignProject[] = [
     id: "creams-nph-rdc-day-2",
     publicId: "CREAMS_nph-rdc-day-2_4x_hwbhxo",
     title: "NPH-RDC Day 2",
-    category: "Posters",
+    category: "Flyers",
     client: "CREAMS",
     description: "Day 2 event recap poster for NPH-RDC",
     alt: "NPH-RDC Day 2 event poster",
@@ -460,7 +463,7 @@ export const designProjects: DesignProject[] = [
     id: "creams-nph-rdc-day-3",
     publicId: "CREAMS_nph-rdc-day-3_4x_xif4iv",
     title: "NPH-RDC Day 3",
-    category: "Posters",
+    category: "Flyers",
     client: "CREAMS",
     description: "Day 3 event recap poster for NPH-RDC",
     alt: "NPH-RDC Day 3 event poster",
@@ -471,7 +474,7 @@ export const designProjects: DesignProject[] = [
     id: "creams-nph-rdc-day-4",
     publicId: "CREAMS_nph-rdc-day-4_4x_jdntbg",
     title: "NPH-RDC Day 4",
-    category: "Posters",
+    category: "Flyers",
     client: "CREAMS",
     description: "Day 4 event recap poster for NPH-RDC",
     alt: "NPH-RDC Day 4 event poster",
@@ -482,7 +485,7 @@ export const designProjects: DesignProject[] = [
     id: "creams-nph-rdc-day-5",
     publicId: "CREAMS_nph-rdc-day-5_4x_hshtvz",
     title: "NPH-RDC Day 5",
-    category: "Posters",
+    category: "Flyers",
     client: "CREAMS",
     description: "Day 5 event recap poster for NPH-RDC",
     alt: "NPH-RDC Day 5 event poster",
@@ -493,7 +496,7 @@ export const designProjects: DesignProject[] = [
     id: "creams-nph-rdc-booklet-cover",
     publicId: "CREAMS_NPH-RDC-booklet-cover-design_sdbkmr",
     title: "NPH-RDC Booklet Cover",
-    category: "Branding",
+    category: "Editorial Design",
     client: "CREAMS",
     description: "Official booklet cover design for the NPH-RDC programme",
     alt: "NPH-RDC official booklet cover design",
@@ -504,23 +507,23 @@ export const designProjects: DesignProject[] = [
     id: "creams-seasons-greetings-1",
     publicId: "CREAMS_seasons_greetings_1_qeejjd",
     title: "Seasons Greetings",
-    category: "Social Media",
+    category: "Flyers",
     client: "CREAMS",
     description: "Festive season greetings social media graphic for CREAMS",
     alt: "CREAMS festive season greetings social media post design 1",
     width: 1080,
-    height: 1080,
+    height: 1350,
   },
   {
     id: "creams-seasons-greetings-2",
     publicId: "CREAMS_seasons_greetings_2_tgt8gr",
     title: "Seasons Greetings",
-    category: "Social Media",
+    category: "Flyers",
     client: "CREAMS",
     description: "Festive season greetings social media graphic for CREAMS",
     alt: "CREAMS festive season greetings social media post design 2",
     width: 1080,
-    height: 1080,
+    height: 1350,
   },
   // — Logo designs —
   {
@@ -748,12 +751,12 @@ export const designProjects: DesignProject[] = [
     id: "firm-and-strong",
     publicId: "firm-and-strong_y2aflu",
     title: "Firm and Strong",
-    category: "Posters",
+    category: "Logos",
     client: "Personal",
     description: "Bold typographic motivational poster design",
     alt: "Firm and Strong bold motivational typographic poster",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "thando",
@@ -764,7 +767,7 @@ export const designProjects: DesignProject[] = [
     description: "Promotional poster design for Thando",
     alt: "Thando promotional poster design",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "ritz-final-round",
@@ -775,7 +778,7 @@ export const designProjects: DesignProject[] = [
     description: "Final round event poster for RITZ Moot Court Competition",
     alt: "RITZ Moot Court Competition final round event poster",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "ritz-round-1",
@@ -786,7 +789,7 @@ export const designProjects: DesignProject[] = [
     description: "Round 1 event poster for RITZ Moot Court Competition",
     alt: "RITZ Moot Court Competition round 1 event poster",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "ritz-starting-soon",
@@ -797,7 +800,7 @@ export const designProjects: DesignProject[] = [
     description: "Countdown teaser poster for RITZ Moot Court Competition",
     alt: "RITZ Moot Court Competition starting soon teaser poster",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "ritz-pre-moot-training",
@@ -808,7 +811,7 @@ export const designProjects: DesignProject[] = [
     description: "Pre-moot training session announcement poster for RITZ",
     alt: "RITZ Pre-Moot Training session announcement poster",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "moot-court-flyer",
@@ -819,7 +822,7 @@ export const designProjects: DesignProject[] = [
     description: "General promotional flyer for Moot Court competition event",
     alt: "Moot Court Competition promotional flyer design",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "us-embassy",
@@ -830,7 +833,7 @@ export const designProjects: DesignProject[] = [
     description: "Official event poster design for US Embassy function",
     alt: "US Embassy event poster design",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "vie-cakes-flyer-4",
@@ -841,7 +844,7 @@ export const designProjects: DesignProject[] = [
     description: "Promotional flyer for Vie Cakes bakery",
     alt: "Vie Cakes bakery promotional flyer design",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "shoe-flyer-1",
@@ -852,7 +855,7 @@ export const designProjects: DesignProject[] = [
     description: "Promotional flyer for footwear retail store",
     alt: "Shoe store promotional flyer design",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "nkhuku-final",
@@ -863,7 +866,7 @@ export const designProjects: DesignProject[] = [
     description: "Promotional flyer design for Nkhuku brand",
     alt: "Nkhuku promotional flyer design",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "mom-retirement-party",
@@ -874,7 +877,7 @@ export const designProjects: DesignProject[] = [
     description: "Elegant retirement party invitation and event flyer design",
     alt: "Retirement party invitation flyer design",
     width: 1080,
-    height: 1350,
+    height: 1080,
   },
   {
     id: "ostritch-pictures-0",
@@ -913,7 +916,7 @@ export const designProjects: DesignProject[] = [
     id: "mama-chri-chri",
     publicId: "mama_chri_chri_d4zy8z",
     title: "Mama Chri-Chri Catering",
-    category: "Social Media",
+    category: "Flyers",
     client: "Mama Chri-Chri Foods",
     description: "Social media graphic for Mama Chri-Chri catering brand",
     alt: "Mama Chri-Chri catering social media graphic design",
