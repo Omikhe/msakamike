@@ -2,7 +2,7 @@ export interface DesignProject {
   id: string;
   publicId: string;
   title: string;
-  category: "Branding" | "Flyers" | "Posters" | "Logos" | "Social Media";
+  category: "Branding" | "Flyers" | "Posters" | "Logos" | "UI/UX Design";
   client: string;
   description: string;
   alt: string;
@@ -270,7 +270,7 @@ export const designProjects: DesignProject[] = [
     id: "joel-mwala-comsoc-flyer-1x1-0",
     publicId: "joel-mwala-COMSOC-campaign-flyer-1x1-0_tie7cf",
     title: "COMSOC Elections 2025 Campaign",
-    category: "Social Media",
+    category: "Flyers",
     client: "Joel Mwala",
     description: "Square social media campaign graphic for Joel Mwala's COMSOC Elections run",
     alt: "COMSOC Elections 2025 square social media graphic variant 0",
@@ -281,7 +281,7 @@ export const designProjects: DesignProject[] = [
     id: "joel-mwala-comsoc-flyer-1x1-1",
     publicId: "joel-mwala-COMSOC-campaign-flyer-1x1-1_fierxt",
     title: "COMSOC Elections 2025 Campaign",
-    category: "Social Media",
+    category: "Flyers",
     client: "Joel Mwala",
     description: "Square social media campaign graphic for Joel Mwala's COMSOC Elections run",
     alt: "COMSOC Elections 2025 square social media graphic variant 1",
@@ -292,7 +292,7 @@ export const designProjects: DesignProject[] = [
     id: "joel-mwala-comsoc-flyer-1x1-2",
     publicId: "joel-mwala-COMSOC-campaign-flyer-1x1-2.png_z2nxnh",
     title: "COMSOC Elections 2025 Campaign",
-    category: "Social Media",
+    category: "Flyers",
     client: "Joel Mwala",
     description: "Square social media campaign graphic for Joel Mwala's COMSOC Elections run",
     alt: "COMSOC Elections 2025 square social media graphic variant 2",
@@ -303,7 +303,7 @@ export const designProjects: DesignProject[] = [
     id: "joel-mwala-comsoc-flyer-1x1-3",
     publicId: "joel-mwala-COMSOC-campaign-flyer-1x1-3_e9krwc",
     title: "COMSOC Elections 2025 Campaign",
-    category: "Social Media",
+    category: "Flyers",
     client: "Joel Mwala",
     description: "Square social media campaign graphic for Joel Mwala's COMSOC Elections run",
     alt: "COMSOC Elections 2025 square social media graphic variant 3",
@@ -924,7 +924,7 @@ export const designProjects: DesignProject[] = [
     id: "disc-mat-more",
     publicId: "disc.mat.more.copy_jsmued",
     title: "Disc Mat — Extended",
-    category: "Social Media",
+    category: "Flyers",
     client: "Joel Mwala",
     description: "Extended vinyl slipmat design variation for social media",
     alt: "Extended vinyl slipmat design social media graphic",
