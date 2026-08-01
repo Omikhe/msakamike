@@ -55,26 +55,20 @@ export const aboutData: AboutData = {
   ],
   timeline: [
     {
-      year: "2024 — Present",
-      role: "Lead Graphic Designer & Front-End Developer",
-      company: "Freelance / Independent Studio",
+      year: "October 2022 - November 2022",
+      role: "Junior Designer",
+      company: "ImageXtra Marketing",
       description:
-        "Designing brand identities and developing responsive web applications for client projects across Africa.",
+        "Designed and printed brand collateral for various clients. Produced high-quality storefront designs.",
     },
     {
-      year: "2022 — 2024",
-      role: "Senior Graphic Designer",
-      company: "CPC Real Estate & Creative Agency",
+      year: "May 2026 - August 2026",
+      role: "Lead Designer",
+      company: "Sana Cash 'N' Carry",
       description:
-        "Designed marketing campaigns, property listing catalogs, and digital social assets for high-profile real estate ventures.",
+        "Managed in-store branding initiatives. Executed social media marketing campaigns in collaboration with the marketing officer. Developed marketing materials and design assets. Created motion graphics for digital platforms. Ensured brand consistency across all touchpoints",
     },
-    {
-      year: "2020 — 2022",
-      role: "Visual Communications Specialist",
-      company: "Ziyembe Media Group",
-      description:
-        "Managed brand visual identity, event collateral, and digital promotional graphics for community radio and public campaigns.",
-    },
+
   ],
   resumeUrl: "/mike-msaka-resume.pdf",
 };
