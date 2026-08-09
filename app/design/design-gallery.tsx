@@ -1,29 +1,58 @@
 "use client";
 
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
-import { useCallback, useMemo } from "react";
+import { useSearchParams, usePathname } from "next/navigation";
+import { useCallback, useMemo, useState, useEffect } from "react";
 import { designProjects, DESIGN_CATEGORIES, DesignCategory } from "@/app/data/design-projects";
 import MasonryGrid from "@/app/components/masonry-grid";
 import { LightboxItem } from "@/app/components/lightbox";
 
 export default function DesignGallery() {
-  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  // Extract tag from search params (case-insensitive match)
-  const currentTagParam = searchParams.get("tag") || "All";
-
-  const activeCategory = useMemo<DesignCategory>(() => {
+  // Extract initial tag from search params or URL
+  const getCategoryFromParams = useCallback((): DesignCategory => {
+    const currentTagParam = searchParams.get("tag") || "All";
     const matched = DESIGN_CATEGORIES.find(
       (cat) => cat.toLowerCase() === currentTagParam.toLowerCase()
     );
     return matched || "All";
-  }, [currentTagParam]);
+  }, [searchParams]);
 
+  const [activeCategory, setActiveCategory] = useState<DesignCategory>(getCategoryFromParams);
+
+  // Sync state if searchParams change externally (e.g. initial load or link navigation)
+  useEffect(() => {
+    setActiveCategory(getCategoryFromParams());
+  }, [getCategoryFromParams]);
+
+  // Handle browser back/forward buttons (popstate)
+  useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const tagParam = params.get("tag");
+      if (!tagParam) {
+        setActiveCategory("All");
+        return;
+      }
+      const matched = DESIGN_CATEGORIES.find(
+        (cat) => cat.toLowerCase() === tagParam.toLowerCase()
+      );
+      setActiveCategory(matched || "All");
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  // Shallow route update for category selection
   const handleCategorySelect = useCallback(
     (category: DesignCategory) => {
-      const params = new URLSearchParams(searchParams.toString());
+      // 1. Instant client state update
+      setActiveCategory(category);
+
+      // 2. Update URL search params via pushState without triggering a server RSC re-fetch
+      const params = new URLSearchParams(window.location.search);
       if (category === "All") {
         params.delete("tag");
       } else {
@@ -31,9 +60,12 @@ export default function DesignGallery() {
       }
       const queryString = params.toString();
       const newUrl = queryString ? `${pathname}?${queryString}` : pathname;
-      router.push(newUrl, { scroll: false });
+
+      if (window.location.search !== (queryString ? `?${queryString}` : "")) {
+        window.history.pushState(null, "", newUrl);
+      }
     },
-    [searchParams, pathname, router]
+    [pathname]
   );
 
   // Filter projects by category
@@ -86,3 +118,4 @@ export default function DesignGallery() {
     </div>
   );
 }
+
