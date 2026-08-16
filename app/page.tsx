@@ -71,7 +71,7 @@ export default async function Home() {
       {/* Recent Projects Section */}
       <div className="flex flex-col gap-6 pt-4">
         <div className="flex items-center gap-2.5 border-b border-[#222222] pb-3">
-          <Folder className="w-5 h-5 text-amber-400" />
+          <Folder className="w-5 h-5 text-pink-600" />
           <h2 className="text-xl font-bold text-neutral-200 tracking-wide">
             Recent Projects
           </h2>
