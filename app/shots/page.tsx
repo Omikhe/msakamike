@@ -33,7 +33,7 @@ export default function ShotsPage() {
       {/* Page Header */}
       <div className="flex flex-col gap-2 border-b border-[#222222] pb-6">
         <div className="flex items-center gap-2">
-          <Camera className="w-7 h-7 text-amber-400" />
+          <Camera className="w-7 h-7 text-pink-600" />
           <h1 className="text-3xl sm:text-4xl font-bold text-neutral-100 tracking-tight">
             Visual Shots & Snippets
           </h1>

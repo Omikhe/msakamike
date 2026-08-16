@@ -42,7 +42,7 @@ export default function MasonryGrid({
                 onClick={() => setLightboxIndex(index)}
                 type="button"
                 aria-label={`Open lightbox view for ${item.title}`}
-                className="w-full h-full block text-left focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-[#121212] rounded-2xl overflow-hidden"
+                className="w-full h-full block text-left focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 focus:ring-offset-[#121212] rounded-2xl overflow-hidden"
               >
                 <div
                   className="relative w-full overflow-hidden bg-[#242424]"
@@ -63,7 +63,7 @@ export default function MasonryGrid({
                     <div className="flex items-center justify-between text-white">
                       <div>
                         {item.category && (
-                          <span className="text-[11px] font-semibold uppercase tracking-wider text-amber-400 block mb-0.5">
+                          <span className="text-[11px] font-semibold uppercase tracking-wider text-pink-700 block mb-0.5">
                             {item.category}
                           </span>
                         )}

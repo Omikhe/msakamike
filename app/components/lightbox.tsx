@@ -151,7 +151,7 @@ export default function Lightbox({
         <button
           onClick={onClose}
           aria-label="Close lightbox"
-          className="p-2.5 rounded-full bg-[#1F1F1F]/90 text-neutral-300 hover:text-white hover:bg-[#333333] transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
+          className="p-2.5 rounded-full bg-[#1F1F1F]/90 text-neutral-300 hover:text-white hover:bg-[#333333] transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
         >
           <X className="w-6 h-6" />
         </button>
@@ -170,14 +170,14 @@ export default function Lightbox({
             <button
               onClick={handlePrev}
               aria-label="Previous image"
-              className="absolute left-3 top-1/2 -translate-y-1/2 z-[105] p-3 rounded-full bg-[#1F1F1F]/80 text-white hover:bg-[#333333] transition-all transform hover:scale-105 shadow-xl focus:outline-none focus:ring-2 focus:ring-amber-400"
+              className="absolute left-3 top-1/2 -translate-y-1/2 z-[105] p-3 rounded-full bg-[#1F1F1F]/80 text-white hover:bg-[#333333] transition-all transform hover:scale-105 shadow-xl focus:outline-none focus:ring-2 focus:ring-pink-600"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={handleNext}
               aria-label="Next image"
-              className="absolute right-3 top-1/2 -translate-y-1/2 z-[105] p-3 rounded-full bg-[#1F1F1F]/80 text-white hover:bg-[#333333] transition-all transform hover:scale-105 shadow-xl focus:outline-none focus:ring-2 focus:ring-amber-400"
+              className="absolute right-3 top-1/2 -translate-y-1/2 z-[105] p-3 rounded-full bg-[#1F1F1F]/80 text-white hover:bg-[#333333] transition-all transform hover:scale-105 shadow-xl focus:outline-none focus:ring-2 focus:ring-pink-600"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
@@ -207,13 +207,13 @@ export default function Lightbox({
             <div className="flex items-center gap-2">
               {currentItem.category && (
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium bg-[#292929] text-neutral-300 rounded-full">
-                  <Tag className="w-3 h-3 text-amber-400" />
+                  <Tag className="w-3 h-3 text-pink-600" />
                   {currentItem.category}
                 </span>
               )}
               {currentItem.client && (
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium bg-[#292929] text-neutral-300 rounded-full">
-                  <User className="w-3 h-3 text-amber-400" />
+                  <User className="w-3 h-3 text-pink-600" />
                   {currentItem.client}
                 </span>
               )}

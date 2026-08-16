@@ -38,7 +38,7 @@ export default async function Home() {
         </div>
 
         <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-neutral-100 tracking-tight leading-tight">
-          Hi, I&apos;m <span className="text-amber-400">Mike</span>. A designer
+          Hi, I&apos;m <span className="text-pink-600">Mike</span>. A designer
           that kind of codes!
         </h1>
 
@@ -52,17 +52,17 @@ export default async function Home() {
             href="https://wa.me/265985626249"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-neutral-200 bg-[#242424] border border-[#333333] hover:bg-emerald-600 hover:text-white hover:border-emerald-500 transition-all duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-400"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-neutral-200 bg-[#242424] border border-[#333333] hover:bg-pink-600 hover:text-white hover:border-pink-500 transition-all duration-200 shadow-sm"
           >
-            <MessageCircle className="w-4 h-4 text-emerald-400 group-hover:text-white" />
+            <MessageCircle className="w-4 h-4 text-white" />
             <span>WhatsApp</span>
           </a>
 
           <a
             href="mailto:mikemsaka84@gmail.com"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-neutral-200 bg-[#242424] border border-[#333333] hover:bg-amber-500 hover:text-neutral-950 hover:border-amber-400 transition-all duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-neutral-200 bg-[#242424] border border-[#333333] hover:bg-pink-600 hover:text-white hover:border-pink-500 transition-all duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
           >
-            <Mail className="w-4 h-4 text-amber-400 group-hover:text-neutral-950" />
+            <Mail className="w-4 h-4 text-white" />
             <span>Email Me</span>
           </a>
         </div>

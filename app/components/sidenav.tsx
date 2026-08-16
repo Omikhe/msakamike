@@ -7,15 +7,15 @@ import Image from "next/image";
 
 export function Avatar() {
   return (
-    <div className="size-20 lg:size-16 bg-amber-100 rounded-full overflow-hidden flex items-center justify-center">
-      <Image
+    <div className="size-20 lg:size-16 bg-pink-600 rounded-full overflow-hidden flex items-center justify-center">
+      {/* <Image
         width={55}
         height={55}
         src="/omikhe-avatar.png"
         alt="Mike Msaka - Graphic Designer"
         priority
         className="rounded-full "
-      />
+      /> */}
     </div>
   )
 }

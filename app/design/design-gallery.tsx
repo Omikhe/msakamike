@@ -101,11 +101,10 @@ export default function DesignGallery() {
               key={category}
               onClick={() => handleCategorySelect(category)}
               type="button"
-              className={`px-4 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-400 ${
-                isActive
-                  ? "bg-amber-400 text-neutral-950 font-semibold shadow-md"
-                  : "bg-[#242424] text-neutral-300 hover:bg-[#333333] hover:text-white"
-              }`}
+              className={`px-4 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-all duration-200 focus:outline-none   ${isActive
+                ? "bg-pink-600 text-white font-semibold shadow-md"
+                : "bg-[#242424] text-neutral-300 hover:bg-[#333333] hover:text-white"
+                }`}
             >
               {category}
             </button>

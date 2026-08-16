@@ -23,7 +23,7 @@ export default function CodeGrid() {
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
             {project.featured && (
-              <span className="absolute top-3 right-3 inline-flex items-center gap-1 px-3 py-1 text-xs font-semibold bg-amber-400 text-neutral-950 rounded-full shadow-md">
+              <span className="absolute top-3 right-3 inline-flex items-center gap-1 px-3 py-1 text-xs font-semibold bg-pink-600 text-white rounded-full shadow-md">
                 <Sparkles className="w-3 h-3" />
                 Featured
               </span>
@@ -33,7 +33,7 @@ export default function CodeGrid() {
           {/* Content */}
           <div className="flex flex-col gap-4 p-6 flex-1">
             <div>
-              <h2 className="text-xl font-bold text-neutral-100 group-hover:text-amber-400 transition-colors">
+              <h2 className="text-xl font-bold text-neutral-100 group-hover:text-pink-600 transition-colors">
                 {project.title}
               </h2>
               <p className="text-neutral-400 text-sm mt-2 leading-relaxed">
@@ -60,7 +60,7 @@ export default function CodeGrid() {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors focus:outline-none focus:underline"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-pink-600 hover:text-pink-500 transition-colors focus:outline-none focus:underline"
             >
               <ExternalLink className="w-4 h-4" />
               <span>Live Demo</span>
